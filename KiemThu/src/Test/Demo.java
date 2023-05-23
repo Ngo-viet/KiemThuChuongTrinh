@@ -20,9 +20,9 @@ public class Demo {
 
     public static void fakeData(){
          
-         HocVienDH hv1 = new HocVienDH(1, 6000000, "Nguyen van A", "Ha Noi", "DH",1);
-         HocVienDH hv2 = new HocVienDH(2, 6000000, "Nguyen van A", "Ha Noi", "DH",1);
-         HocVienDH hv3 = new HocVienDH(2, 4000000, "Nguyen van C", "Ha Noi", "DH",1);
+         HocVienDH hv1 = new HocVienDH(1, 6000000, "Nguyen van Y", "Ha Noi", "DH",1);
+         HocVienDH hv2 = new HocVienDH(2, 6000000, "Nguyen van E", "Ha Noi", "DH",1);
+         HocVienDH hv3 = new HocVienDH(3, 4000000, "Nguyen van X", "Ha Noi", "DH",1);
          ts.add(hv1);
          ts.add(hv2);
          ts.add(hv3);
