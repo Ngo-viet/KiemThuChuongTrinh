@@ -31,17 +31,16 @@ public class HocVienDH extends HocVien implements Comparable<HocVienDH>, Seriali
         super.nhapThongTin();
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap don gia DH: ");
-        donGiaDH= sc.nextDouble();
-        try{
-            System.out.print("Nhap so buoi hoc: ");
+        donGiaDH= sc.nextDouble();       
+        try {
+        	System.out.print("Nhap so buoi hoc: ");
             soBuoi = sc.nextInt();
-            if(soBuoi<0){
-                throw new Exception("So buoi hoc khong hop le!");
+            if(soBuoi<0) {
+            	throw new Exception("Can nhap so buoi lon hon 0");
             }
-        }
-        catch(Exception ex){
-            System.out.println(ex.getMessage());
-            System.exit(0);
+        }catch(Exception ex){
+        	System.out.println(ex.getMessage());
+        	System.exit(0);
         }
     }
 
@@ -62,6 +61,8 @@ public class HocVienDH extends HocVien implements Comparable<HocVienDH>, Seriali
     public int compareTo(HocVienDH o) {
         if (this.hocPhi()>o.hocPhi()){
             return 1;
+        }else if(this.hocPhi() < o.hocPhi()) {
+        	return -1;
         }
         else
             return 0;

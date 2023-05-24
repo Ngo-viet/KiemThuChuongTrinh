@@ -56,21 +56,18 @@ public abstract class HocVien implements Serializable{
     }
     
     public void nhapThongTin(){
-    	Scanner sc = new Scanner(System.in);
+    	Scanner sc = new Scanner(System.in);   	   	     
     	
-    	try {
-    		System.out.print("Nhap ho ten: ");      
+        try {
+        	System.out.print("Nhap ho ten: ");      
             hoTen= sc.nextLine();
             if(hoTen.isEmpty()) {
-            	throw new Exception("Can nhap ten thong tin day du");             	
+            	throw new Exception("Can nhap thong tin day du");
             }
-            
-    	}catch(Exception ex) {
-    		System.out.println(ex.getMessage());
-    		System.exit(0);
-    	}     
-    	/*System.out.print("Nhap ho ten: ");      
-        hoTen= sc.nextLine();*/
+        }catch(Exception ex){
+        	System.out.println(ex.getMessage());
+        	System.exit(0);
+        }
         System.out.print("Nhap dia chi: ");
         diaChi = sc.nextLine();
         System.out.print("Nhap loai chuong trinh: ");

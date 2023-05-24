@@ -20,9 +20,9 @@ public class Demo {
 
     public static void fakeData(){
          
-         HocVienDH hv1 = new HocVienDH(1, 6000000, "Nguyen van Y", "Ha Noi", "DH",1);
-         HocVienDH hv2 = new HocVienDH(2, 6000000, "Nguyen van E", "Ha Noi", "DH",1);
-         HocVienDH hv3 = new HocVienDH(3, 4000000, "Nguyen van X", "Ha Noi", "DH",1);
+         HocVienDH hv1 = new HocVienDH(1, 6000000, "Nguyen van A", "Ha Noi", "DH",1);
+         HocVienDH hv2 = new HocVienDH(1, 6000000, "Nguyen van A", "Ha Noi", "DH",1);
+         HocVienDH hv3 = new HocVienDH(3, 4000000, "Nguyen van A", "Ha Noi", "DH",1);
          ts.add(hv1);
          ts.add(hv2);
          ts.add(hv3);
@@ -49,9 +49,9 @@ public class Demo {
         for(int i = 0;i<n;i++){
             dshvmoi[i] = new HocVienDH();
             dshvmoi[i].nhapThongTin();
-            if(dshvmoi[i].getHoTen().equals("")){
+            /*if(dshvmoi[i].getHoTen().equals("")){
                 break;
-            }
+            }*/
             ts.add(dshvmoi[i]);
         }
     }
